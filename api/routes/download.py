@@ -25,3 +25,11 @@ def get_resume(id:str):
         filename=os.path.basename(file_path),
         media_type="application/octet-stream"
         )
+
+
+@router.delete("/delete-collection/{collection}")
+def delete_collection(collection:str):
+
+    from db.qdrant_db import VectorDB
+    db = VectorDB(host = settings.HOST, port = settings.QDRANT_PORT)
+    return db.delete_collection(collection_name = collection)
