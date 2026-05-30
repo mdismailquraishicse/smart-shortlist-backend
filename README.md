@@ -130,13 +130,13 @@ HUGGINGFACEHUB_API_TOKEN=hf_xxxxxxxxxxxxxxxxxxxxxxxxx
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/mdismailquraishicse/smart-shortlist-backend.git
 ```
 
 Move into the project directory:
 
 ```bash
-cd <project-name>
+cd smart-shortlist-backend
 ```
 
 Create the `.env` file:
